@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteName]" parallel="tests">
+  <test name="Profile Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest">
+        <methods>
+          <include name="quit"/>
+          <include name="testProfile"/>
+        </methods>
+      </class> <!-- com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest -->
+    </classes>
+  </test> <!-- Profile Test(failed) -->
+  <test name="Change Password Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest">
+        <methods>
+          <include name="quit"/>
+          <include name="changePasswordTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest -->
+    </classes>
+  </test> <!-- Change Password Test(failed) -->
+  <test name="Login Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest">
+        <methods>
+          <include name="doLogin" invocation-numbers="1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->

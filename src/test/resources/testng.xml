@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteName" parallel="tests">
+	<test name="Login Test" allow-return-values="true">
+		<classes>
+			<class name="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Profile Test" allow-return-values="true">
+		<classes>
+			<class name="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest" />
+		</classes>
+	</test>
+	
+	<test name="Change Password Test" allow-return-values="true">
+		<classes>
+			<class name="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest" />
+		</classes>
+	</test>
+	
+	<test name="Friends Test" allow-return-values="true">
+		<classes>
+			<class name="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.FriendsTest" />
+		</classes>
+	</test>
+</suite>
+

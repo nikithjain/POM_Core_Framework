@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteName" duration-ms="12" started-at="2018-02-06T14:05:23Z" finished-at="2018-02-06T14:05:23Z">
+    <groups>
+    </groups>
+    <test name="Profile Test" duration-ms="11" started-at="2018-02-06T14:05:23Z" finished-at="2018-02-06T14:05:23Z">
+    </test> <!-- Profile Test -->
+    <test name="Change Password Test" duration-ms="11" started-at="2018-02-06T14:05:23Z" finished-at="2018-02-06T14:05:23Z">
+    </test> <!-- Change Password Test -->
+    <test name="Friends Test" duration-ms="12" started-at="2018-02-06T14:05:23Z" finished-at="2018-02-06T14:05:23Z">
+    </test> <!-- Friends Test -->
+    <test name="Login Test" duration-ms="12" started-at="2018-02-06T14:05:23Z" finished-at="2018-02-06T14:05:23Z">
+    </test> <!-- Login Test -->
+  </suite> <!-- SuiteName -->
+</testng-results>
