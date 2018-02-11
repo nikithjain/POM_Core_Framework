@@ -8,7 +8,7 @@
     <property environment="env"/>
     
     <property name="ws.home" value="${basedir}"/>
-	<property name="ws.jars" value="C:\Selenium_Automation\All_Jars"/>
+	<property name="ws.jars" value="C:\ss_repo\"/>
     <property name="test.dest" value="${ws.home}/build"/>
     <property name="test.src" value="${ws.home}/src"/>
 	<property name="ng.result" value="test-output"/>
@@ -19,7 +19,7 @@
 
     <target name="setClassPath" unless="test.classpath">
         <path id="classpath_jars">
-            <fileset dir="${ws.jars}" includes="*.jar"/>
+            <fileset dir="${ws.jars}" includes="**/*.jar"/>
         </path>
         <pathconvert pathsep=":" 
             property="test.classpath" 
@@ -101,15 +101,15 @@
         </echo>
     </target>
 
-	<path id="test.c">
-	        <fileset dir="${ws.jars}" includes="*.jar"/>
+	<path id="test.run">
+	        <fileset dir="${ws.jars}" includes="**/*.jar"/>
 	</path>
 	
 	  <target name="makexsltreports">
 	        <mkdir dir="${ws.home}/XSLT_Reports/output"/>
 
 	        <xslt in="${ng.result}/testng-results.xml" style="src/test/resources/testng-results.xsl"
-	              out="${ws.home}/XSLT_Reports/output/index.html" classpathref="test.c" processor="SaxonLiaison">
+	              out="${ws.home}/XSLT_Reports/output/index.html" classpathref="test.run" processor="SaxonLiaison">
 	            <param name="testNgXslt.outputDir" expression="${ws.home}/XSLT_Reports/output/"/>
 	            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
 	        </xslt>

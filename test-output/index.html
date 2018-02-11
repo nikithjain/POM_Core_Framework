@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SuiteName">
-              <span class="suite-name border-passed">SuiteName</span>
+              <span class="suite-name border-failed">SuiteName</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">5 methods, 3 failed,  2 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods failed suite-SuiteName"> (hide)</a> <!-- hide-methods failed suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods failed suite-SuiteName"> (show)</a> <!-- show-methods failed suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteName">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.FriendsTest" hash-for-method="doFriendsTest({FriendName=Sujay, Runmode=Y, Browser=Mozilla})">doFriendsTest({FriendName=Sujay, Runmode=Y, Browser=Mozilla})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest" hash-for-method="doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=xxxxxxx, Runmode=Y, Browser=Chrome})">doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=xxxxxxx, Runmode=Y, Browser=Chrome})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest" hash-for-method="doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=Shalinikith_5, Runmode=Y, Browser=M...)">doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=Shalinikith_5, Runmode=Y, Browser=M...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteName -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods skipped suite-SuiteName"> (hide)</a> <!-- hide-methods skipped suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods skipped suite-SuiteName"> (show)</a> <!-- show-methods skipped suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content skipped suite-SuiteName">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest" hash-for-method="changePasswordTest({NewPassword=Shalinikith_5, Username=nikithjain@gmail.com, OldPassword=Shalinikith_1, ExpectedResult...)">changePasswordTest({NewPassword=Shalinikith_5, Username=nikithjain@gmail.com, OldPassword=Shalinikith_1, ExpectedResult...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest" hash-for-method="testProfile">testProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SuiteName -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,6 +146,134 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SuiteName" class="panel SuiteName">
+          <div class="suite-SuiteName-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.FriendsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doFriendsTest({FriendName=Sujay, Runmode=Y, Browser=Mozilla})">
+                  </a> <!-- doFriendsTest({FriendName=Sujay, Runmode=Y, Browser=Mozilla}) -->
+                  <span class="method-name">doFriendsTest</span>
+                  <span class="parameters">({FriendName=Sujay, Runmode=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Could not login
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.base.BaseTest.reportFailure(BaseTest.java:52)
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.FriendsTest.doFriendsTest(FriendsTest.java:43)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-failed -->
+          <div class="suite-SuiteName-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=xxxxxxx, Runmode=Y, Browser=Chrome})">
+                  </a> <!-- doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=xxxxxxx, Runmode=Y, Browser=Chrome}) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=xxxxxxx, Runmode=Y, Browser=Chrome})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=64.0.3282.140)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;VASANTKN1&apos;, ip: &apos;16.169.1.42&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\vasantkn\AppData\Local\Temp\scoped_dir15264_24727}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=64.0.3282.140, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 21764f6a996cb6dd4f20fbf06524fe19
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:925)
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.base.BaseTest.init(BaseTest.java:45)
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest.doLogin(LoginTest.java:38)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=Shalinikith_5, Runmode=Y, Browser=M...)">
+                  </a> <!-- doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=Shalinikith_5, Runmode=Y, Browser=M...) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=Shalinikith_5, Runmode=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failure message
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.base.BaseTest.reportFailure(BaseTest.java:52)
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest.doLogin(LoginTest.java:54)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-failed -->
+          <div class="suite-SuiteName-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProfile">
+                  </a> <!-- testProfile -->
+                  <span class="method-name">testProfile</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test as Runmode is  N
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest.testProfile(ProfileTest.java:29)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-skipped -->
+          <div class="suite-SuiteName-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changePasswordTest({NewPassword=Shalinikith_5, Username=nikithjain@gmail.com, OldPassword=Shalinikith_1, ExpectedResult...)">
+                  </a> <!-- changePasswordTest({NewPassword=Shalinikith_5, Username=nikithjain@gmail.com, OldPassword=Shalinikith_1, ExpectedResult...) -->
+                  <span class="method-name">changePasswordTest</span>
+                  <span class="parameters">({NewPassword=Shalinikith_5, Username=nikithjain@gmail.com, OldPassword=Shalinikith_1, ExpectedResult=Success, Runmode=Y, Browser=Mozilla})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test as Runmode is N
+	at com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest.changePasswordTest(ChangePasswordTest.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-skipped -->
         </div> <!-- panel SuiteName -->
         <div panel-name="test-xml-SuiteName" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -179,11 +350,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'doFriendsTest')
+data.setCell(0, 2, 'com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.FriendsTest')
+data.setCell(0, 3, 70389);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'doLogin')
+data.setCell(1, 2, 'com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest')
+data.setCell(1, 3, 44563);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doLogin')
+data.setCell(2, 2, 'com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest')
+data.setCell(2, 3, 15680);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'changePasswordTest')
+data.setCell(3, 2, 'com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest')
+data.setCell(3, 3, 60);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testProfile')
+data.setCell(4, 2, 'com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest')
+data.setCell(4, 3, 47);
 window.suiteTableData['SuiteName']= { tableData: data, tableDiv: 'times-div-SuiteName'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-SuiteName">
               </div> <!-- times-div-SuiteName -->
             </div> <!-- times-div -->
@@ -208,6 +400,75 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=Shalinikith_5, Runmode=Y, Browser=M...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">changePasswordTest({NewPassword=Shalinikith_5, Username=nikithjain@gmail.com, OldPassword=Shalinikith_1, ExpectedResult...)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testProfile</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.FriendsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doFriendsTest({FriendName=Sujay, Runmode=Y, Browser=Mozilla})</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ChangePasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.ProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">90 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">44566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doLogin({Username=nikithjain@gmail.com, ExpectedResult=Success, Password=xxxxxxx, Runmode=Y, Browser=Chrome})</span>
+                <span class="method-start">52448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">68134 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.facebook.pom.PageObjectModel_WithPageFactory.testcases.FriendsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">70424 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
